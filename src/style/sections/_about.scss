@@ -48,13 +48,20 @@
       }
 
       &-text {
-        text-align: left;
+        text-align: justify;
 
         @include respond(tab-port) {
           text-align: left;
         }
         @include respond(tab-port-sm) {
           text-align: center;
+        }
+
+        &>ul {
+          &>li{
+            font-size: 1.5rem;
+          }
+          
         }
 
         &--important {
